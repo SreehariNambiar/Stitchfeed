@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button data-modal-target="#modal">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Log in</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <section class="active-clss">
+        <form class="form">
+            <ul class="inputs">
+            <li class="username"><input type="text" placeholder="Username / phone number" name="username" id="username" autocomplete="off"></li>
+            <li class="password"><input type="password" placeholder="Password"name="password" id="password" autocomplete="off"></li>
+            <li class="button"><button type="submit" class="btn">Log In</button></li>
+            
+            </ul>
+        </form>
+        <section class="forgot">
+            <ul>
+                <li class="forgots"><a href="#">Forgot Password?</a></li>
+                <li class="hashtag">|</li>
+                <li class="signup"><a href="#">Sign Up</a></li>
+            </ul>
+        </section>
+    </section>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>

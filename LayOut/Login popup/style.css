@@ -1,0 +1,312 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* stop the animation during resizing */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+
+
+/* Remeber to add a zooming in the dropdown 3 zoom levels low med high */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/*:root{
+    filter: invert(100%);
+}*/
+
+/*is active classes*/
+.is-active-2 a i{
+    color:#00bbff;
+}
+.is-active-2 a{
+    background-color:#232425;
+    border:1px solid #0e0e0e;
+}
+.is-active-3 a i{
+    color:#00bbff;
+}
+
+/* .is-active-4{
+    background-color:#232425;
+} */
+
+html{
+    font-family:'Poppins',sans-serif;
+    /* font-size:87.50%; */
+    font-size:14px;
+    margin-bottom: 0;
+    overflow:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;   
+}
+
+body{
+    /* background-color: #000; */
+    background-color: #161616;
+    position:fixed;
+    top:0;
+    left:0;
+    min-height:100vh;
+    width:100vw;
+}
+
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  z-index: 10;
+  /* background-color: white; */
+  width: 500px;
+  max-width: 80%;
+  background-color: #161616;
+  box-shadow:-10px -10px 15px #1b1b1b,10px 10px 10px #000;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+
+  /* background-color: #161616; */
+}
+
+.modal-header .title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#00bbff;
+  width:100%;
+  text-align:center;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#00bbff;
+}
+.modal-header .close-button:hover{
+  color:#fff;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #161616; */
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.active-clss{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction:column;
+ justify-content: space-evenly;
+ /* align-items: center; */
+ /* background-color: #00bbff; */
+}
+
+.form{
+display:flex;
+flex-direction:column;
+justify-content: space-evenly;
+align-items: center;
+width:100%;
+height:100%;
+/* background-color: #232425; */
+}
+.forgot{
+width:100%;
+height:20%;
+/* background-color: blue; */
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items: center;
+}
+.forgot ul{
+width:90%;
+height:auto;
+display:flex;
+margin-top:1em;
+/* background-color: #005e7f; */
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+font-size: 1em;
+color:#fff;
+}
+.forgot ul li a{
+text-decoration:none;
+color:#fff;
+cursor: pointer;
+
+
+}
+.forgot ul li a:hover{
+
+text-decoration: underline;
+}
+
+.inputs{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* background-color: blueviolet; */
+
+height:100%;
+width:100%;
+}
+.inputs li{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:100%;
+width:100%;
+/* background-color: #fff;; */
+
+
+
+}
+.inputs li input{
+padding:0.5em;
+font-size:1.5em;
+width:90%;
+border-radius:none;
+border:none;
+border-radius: 10px;
+border:2px solid #222;
+outline:none;
+/* background-color:#000; */
+background-color: #000;
+
+color: #00bbff;
+
+}
+.inputs li input:focus{
+  border:2px solid #005e7f;
+}
+.inputs li input::placeholder{
+color:#005e7f;
+/* font-weight: bold; */
+letter-spacing: 0em;
+
+}
+.inputs li button{
+padding:0.5em;
+font-size:1.5em;
+width:90%;
+border-radius:50px;
+border:none;
+outline:none;
+cursor:pointer;
+color:#00bbff;
+border:1px solid #00bbff;
+font-weight:bold;
+border:none;
+background-color: #00bbff;
+color:#000;
+/* background-color: aqua; */
+}
+.inputs li button:hover{
+color:#00bbff;
+border:1px solid #00bbff;
+background-color: #161616;
+}
+

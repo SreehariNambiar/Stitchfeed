@@ -1,0 +1,348 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* stop the animation during resizing */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+
+
+/* Remeber to add a zooming in the dropdown 3 zoom levels low med high */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/*:root{
+    filter: invert(100%);
+}*/
+
+/*is active classes*/
+.is-active-2 a i{
+    color:#00bbff;
+}
+.is-active-2 a{
+    background-color:#232425;
+    border:1px solid #0e0e0e;
+}
+.is-active-3 a i{
+    color:#00bbff;
+}
+
+/* .is-active-4{
+    background-color:#232425;
+} */
+
+html{
+    font-family:'Poppins',sans-serif;
+    /* font-size:87.50%; */
+    font-size:14px;
+    margin-bottom: 0;
+    overflow:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;   
+}
+
+body{
+    /* background-color: #000; */
+    /* background-color: #161616; */
+
+    height:auto;
+    width:100vw;
+    color:#fff;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.web-view{
+    height:auto;
+    width:100%;
+    /* background-color: #00bbff; */
+    background-color:#161616;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.titleh h1{
+    font-size:2.5em;
+    text-align:center;
+     font-family: 'Pacifico', cursive;
+    color:#00bbff;
+    background-color: none;
+    cursor:pointer;
+    text-overflow: clip;
+
+}
+.titleh h1:hover{
+    color:#fff;
+}
+.first-section{
+    height:100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #232425; */
+}
+.align-items{
+    width:50%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+    border-radius: 10px;
+    box-shadow:-20px -20px 25px #202020,20px 20px 20px #000;
+}
+.titleh{
+    width:100%;
+    height:20%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+   height:50%;
+    /* background-color: #232425; */
+}
+.forgot{
+    width:100%;
+    height:20%;
+    /* background-color: blue; */
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.forgot ul{
+    width:90%;
+ height:auto;
+ display:flex;
+ margin-top:1em;
+ /* background-color: #005e7f; */
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 1em;
+ color:#fff;
+}
+.forgot ul li a{
+    text-decoration:none;
+   color:#fff;
+    cursor: pointer;
+   
+
+}
+.forgot ul li a:hover{
+    
+    text-decoration: underline;
+}
+
+.inputs{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    
+    height:100%;
+    width:100%;
+}
+.inputs li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    /* background-color: #fff;; */
+    
+    
+
+}
+.inputs li input{
+    padding:0.5em;
+    font-size:1.5em;
+    width:90%;
+    border-radius:none;
+    border:none;
+    border:2px solid #222;
+    border-radius:10px;
+    outline:none;
+    /* background-color:#000; */
+    background-color: #000000;
+
+    color: #00bbff;
+   
+}
+.inputs li input:focus{
+    /* border:2px solid #00bbff; */
+    border:2px solid #005e7f;
+}
+.inputs li input::placeholder{
+    color:#005e7f;
+    /* font-weight: bold; */
+    letter-spacing: 0em;
+
+}
+.inputs li button{
+    padding:0.5em;
+    font-size:1.5em;
+    width:90%;
+    border-radius:50px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:#00bbff;
+    border:1px solid #00bbff;
+    font-weight:bold;
+    border:none;
+    background-color: #00bbff;
+    color:#000;
+    /* background-color: aqua; */
+}
+.inputs li button:hover{
+    color:#00bbff;
+    border:1px solid #00bbff;
+    background-color: #161616;
+}
+
+.footer{
+    height:20vh;
+    min-height:500px;
+    width:100%;
+    display:flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:900px){
+
+    .first-section{
+        height:55em;
+        width: 100%;
+        justify-content: center;
+    }
+    .align-items{
+        width:400px;
+    height:50%;
+    }
+    .inputs{
+        height:100%;
+        width:100%;
+    }
+    .inputs li{
+     
+    height:100%;
+    width:100%;
+
+    }
+  
+}
+
+@media(max-width:400px){
+  
+    body{
+        background-color: #161616;
+    }
+    .first-section{
+        width:100%;
+        height:100vh;
+        justify-content: flex-end;
+        align-items: center;
+        /* background-color: #00bbff; */
+    }
+    .titleh{
+        height:30%;
+        justify-content: flex-end;
+        /* background-color: #fff; */
+    }
+    
+    .align-items{
+        width:100%;
+        height:100%;
+        /* background-color: #0e0e0e; */
+        justify-content: center;
+    }
+    .form{
+        /* background-color: red; */
+        height:30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .inputs{
+        height:100%;
+        /* background-color: aqua; */
+        justify-content: center;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button data-modal-target="#modal">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Log in</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <section class="active-clss">
+        <form class="form">
+            <div class="fullname">
+           <input type="text" name="name" autocomplete="off" required/>
+           <label for="name" class="label-name">
+               <span class="content-name">Full name</span>
+           </label>
+        </div>
+        <span class="divide"></span>
+        <div class="fullname">
+            <input type="text" name="name" autocomplete="off" required/>
+            <label for="name" class="label-name">
+                <span class="content-name">Email</span>
+            </label>
+         </div>
+         <span class="divide"></span>
+         <div class="Date-of -birth">
+           
+             <label for="name" class="label-names">
+                 <span class="content-name">Date Of Birth</span>
+             </label>
+          </div>
+         
+        </form>
+    
+    </section>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>
